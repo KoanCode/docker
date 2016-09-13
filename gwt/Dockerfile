@@ -22,8 +22,8 @@ RUN curl -s https://raw.githubusercontent.com/sdkman/sdkman-cli/65a8dbf5be383dac
     --output /tmp/sdkman-path-helpers.sh && cp /tmp/sdkman-path-helpers.sh "$SDKMAN_DIR/src/sdkman-path-helpers.sh"
 RUN chmod 755 "$SDKMAN_DIR/bin/sdkman-init.sh"
 
-# Gradle 2.11
-RUN source ~/.bashrc && sdk install gradle 2.11
+# Gradle 2.14
+RUN source ~/.bashrc && sdk install gradle 2.14
 ENV GRADLE_HOME "$SDKMAN_DIR/candidates/gradle/current"
 ENV PATH "$GRADLE_HOME/bin:$PATH"
 
