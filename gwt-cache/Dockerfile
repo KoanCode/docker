@@ -1,0 +1,2 @@
+FROM koancode/gwt:latest
+
