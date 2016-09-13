@@ -1,4 +1,4 @@
 # docker
 Docker builds
 
-GWT
+GWT - Google Web Toolkit development environment
